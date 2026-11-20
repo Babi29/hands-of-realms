@@ -6,6 +6,7 @@ Chaque règle porte un niveau de confiance :
 - **[sûr]** : confirmé par l'utilisateur, ou par le wiki et les notes de patch de façon cohérente.
 - **[probable]** : une seule source, ou une source ancienne (alpha/bêta).
 - **[à trancher]** : inconnu ou contradictoire. Une décision est nécessaire avant de coder la règle.
+- **[décidé]** : aucune source, l'utilisateur a choisi.
 
 Sources : dump du wiki fandom (`data/raw/hotg-wiki-pages.json`, 246 pages, licence CC BY-SA), notes de patch alpha 0.0.198 à bêta 0.16.501, guide TenTonHammer (bêta, 2017), capture d'écran et souvenirs de l'utilisateur.
 
@@ -56,12 +57,12 @@ Sources : dump du wiki fandom (`data/raw/hotg-wiki-pages.json`, 246 pages, licen
 | Chaque unité a son propre tour d'action : elle peut se déplacer d'au plus « déplacement » cases, puis attaquer ou utiliser sa capacité. On peut se déplacer puis attaquer, jamais attaquer puis se déplacer. | [sûr] |
 | On peut déplacer une unité, agir avec une autre, puis revenir faire attaquer la première. | [sûr] |
 | Le déplacement peut traverser les unités alliées, mais pas les ennemies ni les obstacles. | [sûr] (MMOHuts 1.0) |
-| Déplacement en orthogonal uniquement (pas de diagonale). | [à trancher] (aucune source) |
-| Une unité au corps à corps attaque une case adjacente. | [probable] (adjacence diagonale [à trancher]) |
+| Déplacement en orthogonal uniquement (pas de diagonale). Chaque pas coûte 1 point de déplacement. | [décidé] (décision de l'utilisateur, le 2026-11-20) |
+| Une unité de mêlée attaque une des 8 cases qui l'entourent (diagonales comprises). | [décidé] |
 | Chaque unité a sa propre portée d'attaque. Les obstacles ne bloquent pas les tirs. | [sûr] |
-| Portée et forme de la portée d'une unité à distance. | [à trancher] (aucune source, et le wiki ne donne pas de champ « portée ») |
-| **Riposte** : l'unité attaquée inflige son ATQ à l'attaquant si celui-ci est dans sa propre portée d'attaque. Ainsi, une unité de mêlée ne riposte pas à un tir lointain, mais une unité à distance riposte à un tir. Pardon et « immunisé à la riposte » l'annulent. | [probable] (TenTonHammer 2017 et GameOverThirty : « Return Damage if the attacker is in range ») |
-| Les dégâts sont simultanés en mêlée : l'attaquant inflige son ATQ, puis subit l'ATQ du défenseur. | [à trancher] |
+| Une unité à distance attaque toute cible à 3 cases ou moins en distance orthogonale (Manhattan : \|Δligne\| + \|Δcolonne\| ≤ 3). | [décidé] |
+| **Riposte** : une attaque de mêlée provoque une riposte. Si le défenseur survit, il inflige son ATQ à l'attaquant. Un tir (attaque d'une unité à distance) ne provoque jamais de riposte. Pardon et « immunisé à la riposte » l'annulent. | [décidé] (pas de riposte aux tirs) ; « seulement si le défenseur survit » [probable] |
+| Pioche au début de chaque tour, y compris au premier tour du premier joueur (comme dans Hearthstone, dont le jeu reprend la répartition 3 cartes / 4 cartes + mana). | [probable] |
 | Les unités gardent leurs dégâts d'un tour à l'autre (pas de soin automatique). | [probable] |
 | Temps de tour limité (alerte à 20 s de la fin). | hors moteur |
 
@@ -99,13 +100,12 @@ Sources : dump du wiki fandom (`data/raw/hotg-wiki-pages.json`, 246 pages, licen
 | Forge / Discover | Crée une carte dans la main (Discover propose un choix). | [probable] |
 | Banish (Bannir) | Retire l'unité du plateau jusqu'au prochain tour. | [probable] |
 
-## 7. Questions à trancher
+## 7. Décisions de l'utilisateur (2026-11-20)
 
-Aucune source trouvée (wiki, notes de patch, 6 articles de 2017-2020) ne répond à ces points. Ils restent à décider :
-
-1. Déplacement : les diagonales sont-elles autorisées ?
-2. Mêlée : une case en diagonale compte-t-elle comme adjacente ?
-3. Portée des unités à distance : quelle distance, et quelle forme (ligne, losange, carré) ?
-4. Riposte : a-t-elle lieu avant ou après la mort du défenseur (dégâts simultanés ou non) ?
+Aucune source ne couvrait ces points, l'utilisateur a tranché :
+- déplacement orthogonal uniquement ;
+- attaque de mêlée sur les 8 cases voisines, diagonales comprises ;
+- pas de riposte contre les tirs ;
+- portée de tir de 3 cases en distance orthogonale.
 
 Sources supplémentaires : [MMOHuts, test de la 1.0 (mars 2018)](https://mmohuts.com/news/hand-of-the-gods-launch-review), [MMOHuts, bêta ouverte (août 2017)](https://mmohuts.com/news/hand-of-the-gods-open-beta-impressions), [TenTonHammer (février 2017)](https://www.tentonhammer.com/guides/smite-tactics-the-basics), [GameOverThirty (alpha)](https://gameoverthirty.com/hand-of-the-gods/), [gg2ez (2020)](https://gg2ez.blog/2020/02/05/hand-of-the-gods-smite-tactics-what-is-it/).
