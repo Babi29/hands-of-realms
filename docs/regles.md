@@ -35,27 +35,32 @@ Sources : dump du wiki fandom (`data/raw/hotg-wiki-pages.json`, 246 pages, licen
 | Règle | Confiance |
 |---|---|
 | Victoire : la pierre d'invocation adverse tombe à 0 PV. | [sûr] |
-| Main de départ, puis mulligan : on peut remplacer des cartes, et les cartes rejetées retournent dans le deck. | [sûr] (taille de la main de départ [à trancher]) |
+| Main de départ : 3 cartes pour le premier joueur (tiré au hasard), 4 pour le second. | [sûr] (MMOHuts, test de la 1.0, mars 2018) |
+| Mulligan avant le tour 1 : on peut remplacer tout ou partie de sa main. Les cartes rejetées retournent dans le deck. | [sûr] |
 | Main de 7 cartes maximum. Une carte piochée au-delà est défaussée. | [sûr] |
-| Pioche : 1 carte au début de chaque tour. | [probable] |
+| Pioche : 1 carte au début de chaque tour. | [sûr] (MMOHuts 1.0) |
 | Deck vide : à chaque pioche impossible, le joueur subit des dégâts qui augmentent de 1 à chaque tour (1, 2, 3…). | [sûr] (la cible exacte, pierre ou leader, est [à trancher]) |
-| Mana : la réserve grandit à chaque tour et se recharge entièrement au début du tour. On voit 0/4 sur la capture. | [à trancher] : mana de départ, gain par tour (+1 ?), maximum (10 ?) |
-| Un joueur qui commence en second a-t-il une compensation ? | [à trancher] |
+| Mana : 2 au premier tour. Au début de chaque tour suivant, la réserve gagne +1 de maximum (jusqu'à 10) et se recharge entièrement. | [sûr] (MMOHuts 1.0 : « recharge your Mana/gain another point (up to 10) ») |
+| La mana non dépensée est perdue en fin de tour. | [probable] |
+| Compensation du second joueur : une carte de plus en main, plus une carte « Mana » à 0 de coût qui donne +1 mana pour un tour. | [sûr] (MMOHuts 1.0 ; en bêta 2017, la potion allait au premier joueur) |
 
 ## 4. Le tour d'un joueur
 
 | Règle | Confiance |
 |---|---|
 | Le joueur actif peut, dans l'ordre qu'il veut : jouer des cartes (en payant leur coût en mana), utiliser la capacité de son leader, puis déplacer et faire attaquer ses unités. | [sûr] |
-| Capacité du leader : elle coûte de la mana (2 en général) et s'utilise une fois par tour. | [probable] |
-| **Déploiement** : une unité jouée apparaît sur une case libre adjacente à sa propre pierre (ou à un point de déploiement, comme le drapeau d'Enyo). | [probable] (en bêta : adjacente au leader) |
+| Capacité du leader : elle coûte 2 mana (sauf modificateur) et s'utilise une fois par tour. Elle n'empêche pas le leader d'agir autrement. | [sûr] (MMOHuts 1.0, patch 0.15) |
+| **Déploiement** : une unité jouée apparaît sur une case libre autour de sa propre pierre, sauf si le texte de la carte dit autre chose (Ah Puch, drapeau d'Enyo, Cri de guerre « n'importe où »). | [sûr] (MMOHuts 1.0) |
+| Les objets (sorts) se lancent autour de sa propre pierre. | [probable] (bêta 2017, contredit par les objets qui ciblent n'importe quel ennemi : à vérifier carte par carte) |
 | Une unité qui vient d'être déployée est **épuisée** jusqu'au tour suivant : elle ne peut ni bouger ni attaquer. Sauf avec Charge ou Initiative. | [sûr] |
-| Chaque unité a son propre tour d'action : elle peut se déplacer d'au plus « déplacement » cases, puis attaquer ou utiliser sa capacité. Attaquer termine ses actions. | [sûr] |
+| Chaque unité a son propre tour d'action : elle peut se déplacer d'au plus « déplacement » cases, puis attaquer ou utiliser sa capacité. On peut se déplacer puis attaquer, jamais attaquer puis se déplacer. | [sûr] |
 | On peut déplacer une unité, agir avec une autre, puis revenir faire attaquer la première. | [sûr] |
-| Déplacement en orthogonal uniquement (pas de diagonale), sans traverser les unités ni les obstacles. | [à trancher] |
+| Le déplacement peut traverser les unités alliées, mais pas les ennemies ni les obstacles. | [sûr] (MMOHuts 1.0) |
+| Déplacement en orthogonal uniquement (pas de diagonale). | [à trancher] (aucune source) |
 | Une unité au corps à corps attaque une case adjacente. | [probable] (adjacence diagonale [à trancher]) |
-| Une unité à distance attaque n'importe quelle cible, hors de portée de mêlée. | [à trancher] (portée exacte) |
-| **Riposte** : l'unité attaquée au corps à corps contre-attaque si elle survit. Il n'y a pas de riposte contre une attaque à distance. | [probable] (déduit du mot-clé Pardon, « l'unité attaquée ne riposte pas ») |
+| Chaque unité a sa propre portée d'attaque. Les obstacles ne bloquent pas les tirs. | [sûr] |
+| Portée et forme de la portée d'une unité à distance. | [à trancher] (aucune source, et le wiki ne donne pas de champ « portée ») |
+| **Riposte** : l'unité attaquée inflige son ATQ à l'attaquant si celui-ci est dans sa propre portée d'attaque. Ainsi, une unité de mêlée ne riposte pas à un tir lointain, mais une unité à distance riposte à un tir. Pardon et « immunisé à la riposte » l'annulent. | [probable] (TenTonHammer 2017 et GameOverThirty : « Return Damage if the attacker is in range ») |
 | Les dégâts sont simultanés en mêlée : l'attaquant inflige son ATQ, puis subit l'ATQ du défenseur. | [à trancher] |
 | Les unités gardent leurs dégâts d'un tour à l'autre (pas de soin automatique). | [probable] |
 | Temps de tour limité (alerte à 20 s de la fin). | hors moteur |
@@ -94,12 +99,13 @@ Sources : dump du wiki fandom (`data/raw/hotg-wiki-pages.json`, 246 pages, licen
 | Forge / Discover | Crée une carte dans la main (Discover propose un choix). | [probable] |
 | Banish (Bannir) | Retire l'unité du plateau jusqu'au prochain tour. | [probable] |
 
-## 7. Questions à trancher en priorité
+## 7. Questions à trancher
 
-1. Mana : combien au tour 1, combien de gain par tour, et quel maximum ?
-2. Taille de la main de départ, et compensation pour le joueur qui commence en second.
-3. Déplacement : diagonales ou non ? Peut-on traverser ses propres unités ?
-4. Mêlée : une case en diagonale compte-t-elle comme adjacente ?
-5. Portée des unités à distance : illimitée, ou bloquée par les obstacles ?
-6. Riposte : confirmes-tu qu'elle existe en mêlée et pas à distance ?
-7. Où se déploient les unités : autour de la pierre, ou sur toute la colonne de départ ?
+Aucune source trouvée (wiki, notes de patch, 6 articles de 2017-2020) ne répond à ces points. Ils restent à décider :
+
+1. Déplacement : les diagonales sont-elles autorisées ?
+2. Mêlée : une case en diagonale compte-t-elle comme adjacente ?
+3. Portée des unités à distance : quelle distance, et quelle forme (ligne, losange, carré) ?
+4. Riposte : a-t-elle lieu avant ou après la mort du défenseur (dégâts simultanés ou non) ?
+
+Sources supplémentaires : [MMOHuts, test de la 1.0 (mars 2018)](https://mmohuts.com/news/hand-of-the-gods-launch-review), [MMOHuts, bêta ouverte (août 2017)](https://mmohuts.com/news/hand-of-the-gods-open-beta-impressions), [TenTonHammer (février 2017)](https://www.tentonhammer.com/guides/smite-tactics-the-basics), [GameOverThirty (alpha)](https://gameoverthirty.com/hand-of-the-gods/), [gg2ez (2020)](https://gg2ez.blog/2020/02/05/hand-of-the-gods-smite-tactics-what-is-it/).
