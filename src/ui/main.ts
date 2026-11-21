@@ -72,7 +72,7 @@ function board(s: UIState) {
       html += `<button class="${cls}" data-cell="${id}" aria-label="${esc(label)}">${inner}</button>`;
     }
   }
-  return `<div class="board-wrap"><div class="board">${html}</div></div>`;
+  return `<div class="board-area"><div class="board-wrap"><div class="board">${html}</div></div></div>`;
 }
 
 function hand(s: UIState) {
@@ -109,8 +109,7 @@ function render() {
         ${bar(s, 1)}
         ${board(s)}
         ${bar(s, 0)}
-        ${win}
-        <div class="actions"><button class="primary" data-end ${s.game.winner !== null ? 'disabled' : ''}>Fin du tour de J${s.game.active + 1}</button><button class="ghost" data-new>Nouvelle partie</button><span class="err" role="status">${esc(s.error ?? '')}</span></div>
+        <div class="actions">${win}<button class="primary" data-end ${s.game.winner !== null ? 'disabled' : ''}>Fin du tour de J${s.game.active + 1}</button><button class="ghost" data-new>Nouvelle partie</button><span class="err" role="status">${esc(s.error ?? '')}</span></div>
         ${hand(s)}
       </div>
       <div class="side">
