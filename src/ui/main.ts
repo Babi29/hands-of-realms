@@ -3,7 +3,7 @@ import type { Card } from '../cards.js';
 import { COLS, ROWS, formatCell } from '../board.js';
 import { newGame, MANA_TOKEN, type PlayerId } from '../engine.js';
 import { buildDeck, mulberry32, playablePantheons } from './deck.js';
-import { click, highlights, initUI, type Click, type UIState } from './controller.js';
+import { click, hasAnyAction, highlights, initUI, type Click, type UIState } from './controller.js';
 
 const cards = cardsData as Card[];
 const app = document.getElementById('app')!;
@@ -101,6 +101,7 @@ function detail(s: UIState) {
 
 function render() {
   const s = state!;
+  const idle = !hasAnyAction(s);
   const win = s.game.winner !== null ? `<div class="win">Victoire du joueur ${s.game.winner + 1}</div>` : '';
   app.innerHTML = `
     <div class="top"><h1>Hand of Realms</h1><span class="sub">Tour ${s.game.turn}</span></div>
@@ -109,7 +110,7 @@ function render() {
         ${bar(s, 1)}
         ${board(s)}
         ${bar(s, 0)}
-        <div class="actions">${win}<button class="primary" data-end ${s.game.winner !== null ? 'disabled' : ''}>Fin du tour de J${s.game.active + 1}</button><button class="ghost" data-new>Nouvelle partie</button><span class="err" role="status">${esc(s.error ?? '')}</span></div>
+        <div class="actions">${win}<button class="primary${idle ? ' nudge' : ''}" data-end ${s.game.winner !== null ? 'disabled' : ''}>Fin du tour de J${s.game.active + 1}</button><button class="ghost" data-new>Nouvelle partie</button><span class="err" role="status">${esc(s.error ?? '')}</span>${idle && !s.error ? '<span class="sub">Plus rien à jouer ce tour : clique sur « Fin du tour ».</span>' : ''}</div>
         ${hand(s)}
       </div>
       <div class="side">

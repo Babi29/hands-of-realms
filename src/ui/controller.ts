@@ -20,6 +20,16 @@ function run(s: UIState, action: Action, msg: string, selected: Selection = null
   }
 }
 
+/** Le joueur actif peut-il encore faire quelque chose d'autre que finir son tour ? */
+export function hasAnyAction(s: UIState): boolean {
+  const g = s.game;
+  if (g.winner !== null) return false;
+  const pl = g.players[g.active];
+  if (pl.hand.some(c => (c.mana ?? 0) <= pl.mana && (c.type === 'Item' ? c.name === MANA_TOKEN.name : deployCells(g).length > 0))) return true;
+  return g.units.some(u => u.owner === g.active && !u.exhausted && !u.attacked &&
+    ((!u.moved && reachableCells(g, u.id).length > 0) || attackableCells(g, u.id).length > 0));
+}
+
 export function highlights(s: UIState): { move: string[]; attack: string[]; deploy: string[] } {
   const none = { move: [], attack: [], deploy: [] };
   if (!s.selected || s.game.winner !== null) return none;

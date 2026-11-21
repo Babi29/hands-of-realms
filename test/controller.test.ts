@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { placeUnit, MANA_TOKEN } from '../src/engine.js';
+import { placeUnit, MANA_TOKEN, type PlayerState } from '../src/engine.js';
 import { initUI, click, highlights, type UIState } from '../src/ui/controller.js';
 import { arena, unitCard } from './helpers.js';
 
@@ -74,5 +74,21 @@ describe('contrôleur', () => {
     let s = click(click(ui(g), { kind: 'cell', cell: 'C6' }), { kind: 'cell', cell: 'C7' });
     expect(s.log.at(-1)).toMatch(/G.*cristal/);
     expect(s.game.players[1].crystalHp).toBe(22);
+  });
+});
+
+import { hasAnyAction } from '../src/ui/controller.js';
+describe('aide quand rien n\'est jouable', () => {
+  it('faux si aucune carte abordable et aucune unité prête', () => {
+    const g0 = arena(0);
+    const g = { ...g0, players: [{ ...g0.players[0], hand: [unitCard('Titan', { mana: 4 })], mana: 2 }, g0.players[1]] as [PlayerState, PlayerState] };
+    expect(hasAnyAction(ui(g))).toBe(false);
+  });
+  it('vrai si une carte est abordable', () => {
+    const g0 = arena(0);
+    expect(hasAnyAction(ui({ ...g0, players: [{ ...g0.players[0], hand: [unitCard('a', { mana: 2 })], mana: 2 }, g0.players[1]] as [PlayerState, PlayerState] }))).toBe(true);
+  });
+  it('vrai si une unité peut encore bouger ou attaquer', () => {
+    expect(hasAnyAction(ui(placeUnit(arena(0), 0, unitCard('G'), 'C4')))).toBe(true);
   });
 });

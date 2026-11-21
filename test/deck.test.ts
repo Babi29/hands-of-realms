@@ -39,3 +39,13 @@ describe('construction de decks de test', () => {
       .toEqual(buildDeck(cards, 'Greek', mulberry32(42)).map(c => c.name));
   });
 });
+
+describe('courbe de mana des decks de test', () => {
+  for (const p of ['Greek', 'Egyptian', 'Norse', 'Roman', 'Chinese', 'Mayan'])
+    it(`${p} : au moins 8 cartes à 2 mana ou moins, et 8 cartes du panthéon`, () => {
+      const d = buildDeck(cards, p, mulberry32(11));
+      expect(d).toHaveLength(25);
+      expect(d.filter(c => (c.mana ?? 0) <= 2).length).toBeGreaterThanOrEqual(8);
+      expect(d.filter(c => c.pantheon === p).length).toBeGreaterThanOrEqual(8);
+    });
+});
