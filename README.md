@@ -15,6 +15,9 @@ Moteur de règles d'abord, en TDD, sans graphismes. Le thème (factions) reste u
 - Déplacement orthogonal, à travers les alliés mais pas les ennemis ni les cristaux. Un déplacement puis une attaque par tour, jamais l'inverse.
 - Mêlée sur les 8 cases voisines, avec riposte si le défenseur survit. Tir à 3 cases (distance de Manhattan), sans riposte.
 
+## Événements
+`applyWithEvents(state, action)` renvoie le nouvel état et la liste ordonnée des événements (déploiement, chemin de déplacement, attaque, riposte, mort, dégâts au cristal, pioche, fatigue, victoire). Le client graphique s'en sert pour animer, le serveur pour les diffuser aux joueurs.
+
 ## Pas encore codé
 Objets (sauf la carte Mana), capacités de leader, mots-clés (Warcry, Afterlife, Guard, Charge…), terrain, mulligan.
 
