@@ -1,0 +1,1397 @@
+[
+ {
+  "type": "state",
+  "view": {
+   "you": 0,
+   "active": 1,
+   "turn": 1,
+   "winner": null,
+   "players": [
+    {
+     "crystalCell": "C2",
+     "crystalHp": 25,
+     "mana": 0,
+     "maxMana": 1,
+     "handCount": 5,
+     "deckCount": 21,
+     "hand": [
+      {
+       "name": "Brontes",
+       "type": "Minion",
+       "pantheon": "Greek",
+       "rarity": "Free",
+       "mana": 3,
+       "attack": 3,
+       "health": 3,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "Whenever a friendly God enters the battlefield, gain +1/+0."
+      },
+      {
+       "name": "Scylla",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Epic",
+       "mana": 3,
+       "attack": 1,
+       "health": 2,
+       "movement": 2,
+       "attackRange": "ranged",
+       "text": "ChargeWhen Scylla kills a unit, gain +3/+0 until the end of your next turn"
+      },
+      {
+       "name": "Hyena",
+       "type": "Beast",
+       "pantheon": "Neutral",
+       "rarity": "Rare",
+       "mana": 2,
+       "attack": 2,
+       "health": 2,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "Whenever a friendly Beast enters the battlefield gain +1/+1."
+      },
+      {
+       "name": "Arachne",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Rare",
+       "mana": 2,
+       "attack": 1,
+       "health": 2,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "At the end of your turn spawn a 1/1 Spiderling."
+      },
+      {
+       "name": "Mana",
+       "type": "Item",
+       "pantheon": "Neutral",
+       "rarity": "Free",
+       "mana": 0,
+       "attack": null,
+       "health": null,
+       "movement": null,
+       "attackRange": null,
+       "text": "Gagne 1 mana pour ce tour."
+      }
+     ]
+    },
+    {
+     "crystalCell": "C7",
+     "crystalHp": 25,
+     "mana": 2,
+     "maxMana": 2,
+     "handCount": 4,
+     "deckCount": 21,
+     "hand": null
+    }
+   ],
+   "options": null,
+   "units": [],
+   "names": [
+    "Ana",
+    "Bob"
+   ],
+   "pantheons": [
+    "Greek",
+    "Norse"
+   ]
+  }
+ },
+ {
+  "type": "events",
+  "events": [
+   {
+    "type": "unitDeployed",
+    "unitId": 1,
+    "name": "Ratatoskr",
+    "owner": 1,
+    "cell": "B7"
+   }
+  ]
+ },
+ {
+  "type": "state",
+  "view": {
+   "you": 0,
+   "active": 1,
+   "turn": 1,
+   "winner": null,
+   "players": [
+    {
+     "crystalCell": "C2",
+     "crystalHp": 25,
+     "mana": 0,
+     "maxMana": 1,
+     "handCount": 5,
+     "deckCount": 21,
+     "hand": [
+      {
+       "name": "Brontes",
+       "type": "Minion",
+       "pantheon": "Greek",
+       "rarity": "Free",
+       "mana": 3,
+       "attack": 3,
+       "health": 3,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "Whenever a friendly God enters the battlefield, gain +1/+0."
+      },
+      {
+       "name": "Scylla",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Epic",
+       "mana": 3,
+       "attack": 1,
+       "health": 2,
+       "movement": 2,
+       "attackRange": "ranged",
+       "text": "ChargeWhen Scylla kills a unit, gain +3/+0 until the end of your next turn"
+      },
+      {
+       "name": "Hyena",
+       "type": "Beast",
+       "pantheon": "Neutral",
+       "rarity": "Rare",
+       "mana": 2,
+       "attack": 2,
+       "health": 2,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "Whenever a friendly Beast enters the battlefield gain +1/+1."
+      },
+      {
+       "name": "Arachne",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Rare",
+       "mana": 2,
+       "attack": 1,
+       "health": 2,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "At the end of your turn spawn a 1/1 Spiderling."
+      },
+      {
+       "name": "Mana",
+       "type": "Item",
+       "pantheon": "Neutral",
+       "rarity": "Free",
+       "mana": 0,
+       "attack": null,
+       "health": null,
+       "movement": null,
+       "attackRange": null,
+       "text": "Gagne 1 mana pour ce tour."
+      }
+     ]
+    },
+    {
+     "crystalCell": "C7",
+     "crystalHp": 25,
+     "mana": 0,
+     "maxMana": 2,
+     "handCount": 3,
+     "deckCount": 21,
+     "hand": null
+    }
+   ],
+   "options": null,
+   "units": [
+    {
+     "id": 1,
+     "name": "Ratatoskr",
+     "owner": 1,
+     "cell": "B7",
+     "attack": 2,
+     "health": 3,
+     "maxHealth": 3,
+     "movement": 3,
+     "attackRange": "melee",
+     "exhausted": true,
+     "moved": false,
+     "attacked": false
+    }
+   ],
+   "names": [
+    "Ana",
+    "Bob"
+   ],
+   "pantheons": [
+    "Greek",
+    "Norse"
+   ]
+  }
+ },
+ {
+  "type": "events",
+  "events": [
+   {
+    "type": "turnStarted",
+    "player": 0,
+    "turn": 2,
+    "mana": 2
+   },
+   {
+    "type": "cardDrawn",
+    "player": 0
+   }
+  ]
+ },
+ {
+  "type": "state",
+  "view": {
+   "you": 0,
+   "active": 0,
+   "turn": 2,
+   "winner": null,
+   "players": [
+    {
+     "crystalCell": "C2",
+     "crystalHp": 25,
+     "mana": 2,
+     "maxMana": 2,
+     "handCount": 6,
+     "deckCount": 20,
+     "hand": [
+      {
+       "name": "Brontes",
+       "type": "Minion",
+       "pantheon": "Greek",
+       "rarity": "Free",
+       "mana": 3,
+       "attack": 3,
+       "health": 3,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "Whenever a friendly God enters the battlefield, gain +1/+0."
+      },
+      {
+       "name": "Scylla",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Epic",
+       "mana": 3,
+       "attack": 1,
+       "health": 2,
+       "movement": 2,
+       "attackRange": "ranged",
+       "text": "ChargeWhen Scylla kills a unit, gain +3/+0 until the end of your next turn"
+      },
+      {
+       "name": "Hyena",
+       "type": "Beast",
+       "pantheon": "Neutral",
+       "rarity": "Rare",
+       "mana": 2,
+       "attack": 2,
+       "health": 2,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "Whenever a friendly Beast enters the battlefield gain +1/+1."
+      },
+      {
+       "name": "Arachne",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Rare",
+       "mana": 2,
+       "attack": 1,
+       "health": 2,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "At the end of your turn spawn a 1/1 Spiderling."
+      },
+      {
+       "name": "Mana",
+       "type": "Item",
+       "pantheon": "Neutral",
+       "rarity": "Free",
+       "mana": 0,
+       "attack": null,
+       "health": null,
+       "movement": null,
+       "attackRange": null,
+       "text": "Gagne 1 mana pour ce tour."
+      },
+      {
+       "name": "Spiderling",
+       "type": "Minion",
+       "pantheon": "Greek",
+       "rarity": "Common",
+       "mana": 1,
+       "attack": 1,
+       "health": 1,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": ""
+      }
+     ]
+    },
+    {
+     "crystalCell": "C7",
+     "crystalHp": 25,
+     "mana": 0,
+     "maxMana": 2,
+     "handCount": 3,
+     "deckCount": 21,
+     "hand": null
+    }
+   ],
+   "options": {
+    "deploy": [
+     "B1",
+     "B2",
+     "B3",
+     "C1",
+     "C3",
+     "D1",
+     "D2",
+     "D3"
+    ],
+    "units": []
+   },
+   "units": [
+    {
+     "id": 1,
+     "name": "Ratatoskr",
+     "owner": 1,
+     "cell": "B7",
+     "attack": 2,
+     "health": 3,
+     "maxHealth": 3,
+     "movement": 3,
+     "attackRange": "melee",
+     "exhausted": true,
+     "moved": false,
+     "attacked": false
+    }
+   ],
+   "names": [
+    "Ana",
+    "Bob"
+   ],
+   "pantheons": [
+    "Greek",
+    "Norse"
+   ]
+  }
+ },
+ {
+  "type": "events",
+  "events": [
+   {
+    "type": "unitDeployed",
+    "unitId": 2,
+    "name": "Hyena",
+    "owner": 0,
+    "cell": "B2"
+   }
+  ]
+ },
+ {
+  "type": "state",
+  "view": {
+   "you": 0,
+   "active": 0,
+   "turn": 2,
+   "winner": null,
+   "players": [
+    {
+     "crystalCell": "C2",
+     "crystalHp": 25,
+     "mana": 0,
+     "maxMana": 2,
+     "handCount": 5,
+     "deckCount": 20,
+     "hand": [
+      {
+       "name": "Brontes",
+       "type": "Minion",
+       "pantheon": "Greek",
+       "rarity": "Free",
+       "mana": 3,
+       "attack": 3,
+       "health": 3,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "Whenever a friendly God enters the battlefield, gain +1/+0."
+      },
+      {
+       "name": "Scylla",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Epic",
+       "mana": 3,
+       "attack": 1,
+       "health": 2,
+       "movement": 2,
+       "attackRange": "ranged",
+       "text": "ChargeWhen Scylla kills a unit, gain +3/+0 until the end of your next turn"
+      },
+      {
+       "name": "Arachne",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Rare",
+       "mana": 2,
+       "attack": 1,
+       "health": 2,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "At the end of your turn spawn a 1/1 Spiderling."
+      },
+      {
+       "name": "Mana",
+       "type": "Item",
+       "pantheon": "Neutral",
+       "rarity": "Free",
+       "mana": 0,
+       "attack": null,
+       "health": null,
+       "movement": null,
+       "attackRange": null,
+       "text": "Gagne 1 mana pour ce tour."
+      },
+      {
+       "name": "Spiderling",
+       "type": "Minion",
+       "pantheon": "Greek",
+       "rarity": "Common",
+       "mana": 1,
+       "attack": 1,
+       "health": 1,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": ""
+      }
+     ]
+    },
+    {
+     "crystalCell": "C7",
+     "crystalHp": 25,
+     "mana": 0,
+     "maxMana": 2,
+     "handCount": 3,
+     "deckCount": 21,
+     "hand": null
+    }
+   ],
+   "options": {
+    "deploy": [
+     "B1",
+     "B3",
+     "C1",
+     "C3",
+     "D1",
+     "D2",
+     "D3"
+    ],
+    "units": []
+   },
+   "units": [
+    {
+     "id": 1,
+     "name": "Ratatoskr",
+     "owner": 1,
+     "cell": "B7",
+     "attack": 2,
+     "health": 3,
+     "maxHealth": 3,
+     "movement": 3,
+     "attackRange": "melee",
+     "exhausted": true,
+     "moved": false,
+     "attacked": false
+    },
+    {
+     "id": 2,
+     "name": "Hyena",
+     "owner": 0,
+     "cell": "B2",
+     "attack": 2,
+     "health": 2,
+     "maxHealth": 2,
+     "movement": 3,
+     "attackRange": "melee",
+     "exhausted": true,
+     "moved": false,
+     "attacked": false
+    }
+   ],
+   "names": [
+    "Ana",
+    "Bob"
+   ],
+   "pantheons": [
+    "Greek",
+    "Norse"
+   ]
+  }
+ },
+ {
+  "type": "events",
+  "events": [
+   {
+    "type": "turnStarted",
+    "player": 1,
+    "turn": 3,
+    "mana": 3
+   },
+   {
+    "type": "cardDrawn",
+    "player": 1
+   }
+  ]
+ },
+ {
+  "type": "state",
+  "view": {
+   "you": 0,
+   "active": 1,
+   "turn": 3,
+   "winner": null,
+   "players": [
+    {
+     "crystalCell": "C2",
+     "crystalHp": 25,
+     "mana": 0,
+     "maxMana": 2,
+     "handCount": 5,
+     "deckCount": 20,
+     "hand": [
+      {
+       "name": "Brontes",
+       "type": "Minion",
+       "pantheon": "Greek",
+       "rarity": "Free",
+       "mana": 3,
+       "attack": 3,
+       "health": 3,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "Whenever a friendly God enters the battlefield, gain +1/+0."
+      },
+      {
+       "name": "Scylla",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Epic",
+       "mana": 3,
+       "attack": 1,
+       "health": 2,
+       "movement": 2,
+       "attackRange": "ranged",
+       "text": "ChargeWhen Scylla kills a unit, gain +3/+0 until the end of your next turn"
+      },
+      {
+       "name": "Arachne",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Rare",
+       "mana": 2,
+       "attack": 1,
+       "health": 2,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "At the end of your turn spawn a 1/1 Spiderling."
+      },
+      {
+       "name": "Mana",
+       "type": "Item",
+       "pantheon": "Neutral",
+       "rarity": "Free",
+       "mana": 0,
+       "attack": null,
+       "health": null,
+       "movement": null,
+       "attackRange": null,
+       "text": "Gagne 1 mana pour ce tour."
+      },
+      {
+       "name": "Spiderling",
+       "type": "Minion",
+       "pantheon": "Greek",
+       "rarity": "Common",
+       "mana": 1,
+       "attack": 1,
+       "health": 1,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": ""
+      }
+     ]
+    },
+    {
+     "crystalCell": "C7",
+     "crystalHp": 25,
+     "mana": 3,
+     "maxMana": 3,
+     "handCount": 4,
+     "deckCount": 20,
+     "hand": null
+    }
+   ],
+   "options": null,
+   "units": [
+    {
+     "id": 1,
+     "name": "Ratatoskr",
+     "owner": 1,
+     "cell": "B7",
+     "attack": 2,
+     "health": 3,
+     "maxHealth": 3,
+     "movement": 3,
+     "attackRange": "melee",
+     "exhausted": false,
+     "moved": false,
+     "attacked": false
+    },
+    {
+     "id": 2,
+     "name": "Hyena",
+     "owner": 0,
+     "cell": "B2",
+     "attack": 2,
+     "health": 2,
+     "maxHealth": 2,
+     "movement": 3,
+     "attackRange": "melee",
+     "exhausted": true,
+     "moved": false,
+     "attacked": false
+    }
+   ],
+   "names": [
+    "Ana",
+    "Bob"
+   ],
+   "pantheons": [
+    "Greek",
+    "Norse"
+   ]
+  }
+ },
+ {
+  "type": "events",
+  "events": [
+   {
+    "type": "turnStarted",
+    "player": 0,
+    "turn": 4,
+    "mana": 3
+   },
+   {
+    "type": "cardDrawn",
+    "player": 0
+   }
+  ]
+ },
+ {
+  "type": "state",
+  "view": {
+   "you": 0,
+   "active": 0,
+   "turn": 4,
+   "winner": null,
+   "players": [
+    {
+     "crystalCell": "C2",
+     "crystalHp": 25,
+     "mana": 3,
+     "maxMana": 3,
+     "handCount": 6,
+     "deckCount": 19,
+     "hand": [
+      {
+       "name": "Brontes",
+       "type": "Minion",
+       "pantheon": "Greek",
+       "rarity": "Free",
+       "mana": 3,
+       "attack": 3,
+       "health": 3,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "Whenever a friendly God enters the battlefield, gain +1/+0."
+      },
+      {
+       "name": "Scylla",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Epic",
+       "mana": 3,
+       "attack": 1,
+       "health": 2,
+       "movement": 2,
+       "attackRange": "ranged",
+       "text": "ChargeWhen Scylla kills a unit, gain +3/+0 until the end of your next turn"
+      },
+      {
+       "name": "Arachne",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Rare",
+       "mana": 2,
+       "attack": 1,
+       "health": 2,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "At the end of your turn spawn a 1/1 Spiderling."
+      },
+      {
+       "name": "Mana",
+       "type": "Item",
+       "pantheon": "Neutral",
+       "rarity": "Free",
+       "mana": 0,
+       "attack": null,
+       "health": null,
+       "movement": null,
+       "attackRange": null,
+       "text": "Gagne 1 mana pour ce tour."
+      },
+      {
+       "name": "Spiderling",
+       "type": "Minion",
+       "pantheon": "Greek",
+       "rarity": "Common",
+       "mana": 1,
+       "attack": 1,
+       "health": 1,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": ""
+      },
+      {
+       "name": "Fire Imp",
+       "type": "Minion",
+       "pantheon": "Neutral",
+       "rarity": "Free",
+       "mana": 2,
+       "attack": 2,
+       "health": 1,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "Charge"
+      }
+     ]
+    },
+    {
+     "crystalCell": "C7",
+     "crystalHp": 25,
+     "mana": 3,
+     "maxMana": 3,
+     "handCount": 4,
+     "deckCount": 20,
+     "hand": null
+    }
+   ],
+   "options": {
+    "deploy": [
+     "B1",
+     "B3",
+     "C1",
+     "C3",
+     "D1",
+     "D2",
+     "D3"
+    ],
+    "units": [
+     {
+      "id": 2,
+      "move": [
+       "A2",
+       "B3",
+       "B1",
+       "A3",
+       "A1",
+       "C3",
+       "B4",
+       "C1",
+       "A4",
+       "D3",
+       "C4",
+       "B5",
+       "D1"
+      ],
+      "attack": []
+     }
+    ]
+   },
+   "units": [
+    {
+     "id": 1,
+     "name": "Ratatoskr",
+     "owner": 1,
+     "cell": "B7",
+     "attack": 2,
+     "health": 3,
+     "maxHealth": 3,
+     "movement": 3,
+     "attackRange": "melee",
+     "exhausted": false,
+     "moved": false,
+     "attacked": false
+    },
+    {
+     "id": 2,
+     "name": "Hyena",
+     "owner": 0,
+     "cell": "B2",
+     "attack": 2,
+     "health": 2,
+     "maxHealth": 2,
+     "movement": 3,
+     "attackRange": "melee",
+     "exhausted": false,
+     "moved": false,
+     "attacked": false
+    }
+   ],
+   "names": [
+    "Ana",
+    "Bob"
+   ],
+   "pantheons": [
+    "Greek",
+    "Norse"
+   ]
+  }
+ },
+ {
+  "type": "error",
+  "message": "Case occupée : B2"
+ },
+ {
+  "type": "events",
+  "events": [
+   {
+    "type": "turnStarted",
+    "player": 1,
+    "turn": 5,
+    "mana": 4
+   },
+   {
+    "type": "cardDrawn",
+    "player": 1
+   }
+  ]
+ },
+ {
+  "type": "state",
+  "view": {
+   "you": 0,
+   "active": 1,
+   "turn": 5,
+   "winner": null,
+   "players": [
+    {
+     "crystalCell": "C2",
+     "crystalHp": 25,
+     "mana": 3,
+     "maxMana": 3,
+     "handCount": 6,
+     "deckCount": 19,
+     "hand": [
+      {
+       "name": "Brontes",
+       "type": "Minion",
+       "pantheon": "Greek",
+       "rarity": "Free",
+       "mana": 3,
+       "attack": 3,
+       "health": 3,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "Whenever a friendly God enters the battlefield, gain +1/+0."
+      },
+      {
+       "name": "Scylla",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Epic",
+       "mana": 3,
+       "attack": 1,
+       "health": 2,
+       "movement": 2,
+       "attackRange": "ranged",
+       "text": "ChargeWhen Scylla kills a unit, gain +3/+0 until the end of your next turn"
+      },
+      {
+       "name": "Arachne",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Rare",
+       "mana": 2,
+       "attack": 1,
+       "health": 2,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "At the end of your turn spawn a 1/1 Spiderling."
+      },
+      {
+       "name": "Mana",
+       "type": "Item",
+       "pantheon": "Neutral",
+       "rarity": "Free",
+       "mana": 0,
+       "attack": null,
+       "health": null,
+       "movement": null,
+       "attackRange": null,
+       "text": "Gagne 1 mana pour ce tour."
+      },
+      {
+       "name": "Spiderling",
+       "type": "Minion",
+       "pantheon": "Greek",
+       "rarity": "Common",
+       "mana": 1,
+       "attack": 1,
+       "health": 1,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": ""
+      },
+      {
+       "name": "Fire Imp",
+       "type": "Minion",
+       "pantheon": "Neutral",
+       "rarity": "Free",
+       "mana": 2,
+       "attack": 2,
+       "health": 1,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "Charge"
+      }
+     ]
+    },
+    {
+     "crystalCell": "C7",
+     "crystalHp": 25,
+     "mana": 4,
+     "maxMana": 4,
+     "handCount": 5,
+     "deckCount": 19,
+     "hand": null
+    }
+   ],
+   "options": null,
+   "units": [
+    {
+     "id": 1,
+     "name": "Ratatoskr",
+     "owner": 1,
+     "cell": "B7",
+     "attack": 2,
+     "health": 3,
+     "maxHealth": 3,
+     "movement": 3,
+     "attackRange": "melee",
+     "exhausted": false,
+     "moved": false,
+     "attacked": false
+    },
+    {
+     "id": 2,
+     "name": "Hyena",
+     "owner": 0,
+     "cell": "B2",
+     "attack": 2,
+     "health": 2,
+     "maxHealth": 2,
+     "movement": 3,
+     "attackRange": "melee",
+     "exhausted": false,
+     "moved": false,
+     "attacked": false
+    }
+   ],
+   "names": [
+    "Ana",
+    "Bob"
+   ],
+   "pantheons": [
+    "Greek",
+    "Norse"
+   ]
+  }
+ },
+ {
+  "type": "events",
+  "events": [
+   {
+    "type": "turnStarted",
+    "player": 0,
+    "turn": 6,
+    "mana": 4
+   },
+   {
+    "type": "cardDrawn",
+    "player": 0
+   }
+  ]
+ },
+ {
+  "type": "state",
+  "view": {
+   "you": 0,
+   "active": 0,
+   "turn": 6,
+   "winner": null,
+   "players": [
+    {
+     "crystalCell": "C2",
+     "crystalHp": 25,
+     "mana": 4,
+     "maxMana": 4,
+     "handCount": 7,
+     "deckCount": 18,
+     "hand": [
+      {
+       "name": "Brontes",
+       "type": "Minion",
+       "pantheon": "Greek",
+       "rarity": "Free",
+       "mana": 3,
+       "attack": 3,
+       "health": 3,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "Whenever a friendly God enters the battlefield, gain +1/+0."
+      },
+      {
+       "name": "Scylla",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Epic",
+       "mana": 3,
+       "attack": 1,
+       "health": 2,
+       "movement": 2,
+       "attackRange": "ranged",
+       "text": "ChargeWhen Scylla kills a unit, gain +3/+0 until the end of your next turn"
+      },
+      {
+       "name": "Arachne",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Rare",
+       "mana": 2,
+       "attack": 1,
+       "health": 2,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "At the end of your turn spawn a 1/1 Spiderling."
+      },
+      {
+       "name": "Mana",
+       "type": "Item",
+       "pantheon": "Neutral",
+       "rarity": "Free",
+       "mana": 0,
+       "attack": null,
+       "health": null,
+       "movement": null,
+       "attackRange": null,
+       "text": "Gagne 1 mana pour ce tour."
+      },
+      {
+       "name": "Spiderling",
+       "type": "Minion",
+       "pantheon": "Greek",
+       "rarity": "Common",
+       "mana": 1,
+       "attack": 1,
+       "health": 1,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": ""
+      },
+      {
+       "name": "Fire Imp",
+       "type": "Minion",
+       "pantheon": "Neutral",
+       "rarity": "Free",
+       "mana": 2,
+       "attack": 2,
+       "health": 1,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "Charge"
+      },
+      {
+       "name": "Aphrodite",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Free",
+       "mana": 4,
+       "attack": 2,
+       "health": 4,
+       "movement": 2,
+       "attackRange": "ranged",
+       "text": "Warcry: Target friendly gains Protect 1. If the target is a god give it Protect 2."
+      }
+     ]
+    },
+    {
+     "crystalCell": "C7",
+     "crystalHp": 25,
+     "mana": 4,
+     "maxMana": 4,
+     "handCount": 5,
+     "deckCount": 19,
+     "hand": null
+    }
+   ],
+   "options": {
+    "deploy": [
+     "B1",
+     "B3",
+     "C1",
+     "C3",
+     "D1",
+     "D2",
+     "D3"
+    ],
+    "units": [
+     {
+      "id": 2,
+      "move": [
+       "A2",
+       "B3",
+       "B1",
+       "A3",
+       "A1",
+       "C3",
+       "B4",
+       "C1",
+       "A4",
+       "D3",
+       "C4",
+       "B5",
+       "D1"
+      ],
+      "attack": []
+     }
+    ]
+   },
+   "units": [
+    {
+     "id": 1,
+     "name": "Ratatoskr",
+     "owner": 1,
+     "cell": "B7",
+     "attack": 2,
+     "health": 3,
+     "maxHealth": 3,
+     "movement": 3,
+     "attackRange": "melee",
+     "exhausted": false,
+     "moved": false,
+     "attacked": false
+    },
+    {
+     "id": 2,
+     "name": "Hyena",
+     "owner": 0,
+     "cell": "B2",
+     "attack": 2,
+     "health": 2,
+     "maxHealth": 2,
+     "movement": 3,
+     "attackRange": "melee",
+     "exhausted": false,
+     "moved": false,
+     "attacked": false
+    }
+   ],
+   "names": [
+    "Ana",
+    "Bob"
+   ],
+   "pantheons": [
+    "Greek",
+    "Norse"
+   ]
+  }
+ },
+ {
+  "type": "error",
+  "message": "Case occupée : B2"
+ },
+ {
+  "type": "events",
+  "events": [
+   {
+    "type": "turnStarted",
+    "player": 1,
+    "turn": 7,
+    "mana": 5
+   },
+   {
+    "type": "cardDrawn",
+    "player": 1
+   }
+  ]
+ },
+ {
+  "type": "state",
+  "view": {
+   "you": 0,
+   "active": 1,
+   "turn": 7,
+   "winner": null,
+   "players": [
+    {
+     "crystalCell": "C2",
+     "crystalHp": 25,
+     "mana": 4,
+     "maxMana": 4,
+     "handCount": 7,
+     "deckCount": 18,
+     "hand": [
+      {
+       "name": "Brontes",
+       "type": "Minion",
+       "pantheon": "Greek",
+       "rarity": "Free",
+       "mana": 3,
+       "attack": 3,
+       "health": 3,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "Whenever a friendly God enters the battlefield, gain +1/+0."
+      },
+      {
+       "name": "Scylla",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Epic",
+       "mana": 3,
+       "attack": 1,
+       "health": 2,
+       "movement": 2,
+       "attackRange": "ranged",
+       "text": "ChargeWhen Scylla kills a unit, gain +3/+0 until the end of your next turn"
+      },
+      {
+       "name": "Arachne",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Rare",
+       "mana": 2,
+       "attack": 1,
+       "health": 2,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "At the end of your turn spawn a 1/1 Spiderling."
+      },
+      {
+       "name": "Mana",
+       "type": "Item",
+       "pantheon": "Neutral",
+       "rarity": "Free",
+       "mana": 0,
+       "attack": null,
+       "health": null,
+       "movement": null,
+       "attackRange": null,
+       "text": "Gagne 1 mana pour ce tour."
+      },
+      {
+       "name": "Spiderling",
+       "type": "Minion",
+       "pantheon": "Greek",
+       "rarity": "Common",
+       "mana": 1,
+       "attack": 1,
+       "health": 1,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": ""
+      },
+      {
+       "name": "Fire Imp",
+       "type": "Minion",
+       "pantheon": "Neutral",
+       "rarity": "Free",
+       "mana": 2,
+       "attack": 2,
+       "health": 1,
+       "movement": 3,
+       "attackRange": "melee",
+       "text": "Charge"
+      },
+      {
+       "name": "Aphrodite",
+       "type": "God",
+       "pantheon": "Greek",
+       "rarity": "Free",
+       "mana": 4,
+       "attack": 2,
+       "health": 4,
+       "movement": 2,
+       "attackRange": "ranged",
+       "text": "Warcry: Target friendly gains Protect 1. If the target is a god give it Protect 2."
+      }
+     ]
+    },
+    {
+     "crystalCell": "C7",
+     "crystalHp": 25,
+     "mana": 5,
+     "maxMana": 5,
+     "handCount": 6,
+     "deckCount": 18,
+     "hand": null
+    }
+   ],
+   "options": null,
+   "units": [
+    {
+     "id": 1,
+     "name": "Ratatoskr",
+     "owner": 1,
+     "cell": "B7",
+     "attack": 2,
+     "health": 3,
+     "maxHealth": 3,
+     "movement": 3,
+     "attackRange": "melee",
+     "exhausted": false,
+     "moved": false,
+     "attacked": false
+    },
+    {
+     "id": 2,
+     "name": "Hyena",
+     "owner": 0,
+     "cell": "B2",
+     "attack": 2,
+     "health": 2,
+     "maxHealth": 2,
+     "movement": 3,
+     "attackRange": "melee",
+     "exhausted": false,
+     "moved": false,
+     "attacked": false
+    }
+   ],
+   "names": [
+    "Ana",
+    "Bob"
+   ],
+   "pantheons": [
+    "Greek",
+    "Norse"
+   ]
+  }
+ }
+]

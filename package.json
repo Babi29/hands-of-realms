@@ -5,17 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest run",
-    "build:ui": "node scripts/build-ui.mjs"
+    "build:ui": "node scripts/build-ui.mjs",
+    "server": "tsx src/server/main.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^26.6.6",
+    "@types/ws": "^8.18.2",
     "esbuild": "^0.28.2",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vitest": "^2.1.9"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "ws": "^8.23.0"
+  }
 }
