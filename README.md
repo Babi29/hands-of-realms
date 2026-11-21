@@ -22,3 +22,7 @@ Objets (sauf la carte Mana), capacités de leader, mots-clés (Warcry, Afterlife
     npm install
     npm test
     npx tsx scripts/extract-cards.ts   # régénère data/hotg-cards.json
+    npm run build:ui                   # interface de test -> dist/hor.html (fichier autonome, à ouvrir dans un navigateur)
+
+## Interface de test
+Partie à deux joueurs sur le même écran : choix des panthéons, decks de 25 unités tirées au hasard (graine réglable). Cliquer une carte, puis une case dorée pour déployer. Cliquer une unité, puis une case verte pour la déplacer ou une case rouge pour attaquer.

@@ -130,6 +130,17 @@ function ownReadyUnit(g: GameState, unitId: number): Unit {
   return u;
 }
 
+export function deployCells(g: GameState): string[] {
+  const c = g.players[g.active].crystal;
+  const out: string[] = [];
+  for (let dr = -1; dr <= 1; dr++)
+    for (let dc = -1; dc <= 1; dc++) {
+      const p = { row: c.row + dr, col: c.col + dc };
+      if ((dr || dc) && isOnBoard(p) && !isOccupied(g, p)) out.push(formatCell(p));
+    }
+  return out;
+}
+
 export function reachableCells(g: GameState, unitId: number): string[] {
   const u = g.units.find(x => x.id === unitId);
   if (!u) return [];

@@ -42,3 +42,11 @@ describe('déploiement', () => {
     expect(() => apply(g, { type: 'move', unitId: id, cell: 'C4' })).not.toThrow();
   });
 });
+
+import { deployCells } from '../src/engine.js';
+describe('cases de déploiement', () => {
+  it('liste les cases libres autour du cristal du joueur actif', () => {
+    expect(deployCells(arena(0)).sort()).toEqual(['B1', 'B2', 'B3', 'C1', 'C3', 'D1', 'D2', 'D3']);
+    expect(deployCells(arena(1)).sort()).toEqual(['B6', 'B7', 'B8', 'C6', 'C8', 'D6', 'D7', 'D8']);
+  });
+});
