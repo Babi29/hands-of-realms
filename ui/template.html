@@ -46,8 +46,8 @@ button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px }
 .pips { display: inline-flex; gap: 3px; vertical-align: middle }
 .pip { width: 9px; height: 9px; border-radius: 50%; border: 1.5px solid var(--gold) }
 .pip.full { background: var(--gold) }
-.board-wrap { overflow-x: auto }
-.board { display: grid; grid-template-columns: 18px repeat(8, minmax(38px, 1fr)); gap: 3px; min-width: 340px }
+.board-wrap { overflow-x: auto; width: 100%; max-width: max(300px, calc((100dvh - 370px) * 1.72)); margin-inline: auto }
+.board { display: grid; grid-template-columns: 18px repeat(8, minmax(38px, 1fr)); gap: 3px; min-width: 300px }
 .axis { font-family: var(--mono); font-size: 11px; color: var(--muted); display: grid; place-items: center }
 .cell { aspect-ratio: 1; border: 0; border-radius: 6px; background: var(--cell); position: relative; padding: 2px; display: grid; place-items: center; min-width: 0; overflow: hidden }
 .cell.alt { background: var(--cell-alt) }
