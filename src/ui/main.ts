@@ -110,7 +110,7 @@ function render() {
         ${bar(s, 1)}
         ${board(s)}
         ${bar(s, 0)}
-        <div class="actions">${win}<button class="primary${idle ? ' nudge' : ''}" data-end ${s.game.winner !== null ? 'disabled' : ''}>Fin du tour de J${s.game.active + 1}</button><button class="ghost" data-new>Nouvelle partie</button><span class="err" role="status">${esc(s.error ?? '')}</span>${idle && !s.error ? '<span class="sub">Plus rien à jouer ce tour : clique sur « Fin du tour ».</span>' : ''}</div>
+        <div class="actions">${win}<button class="primary${idle ? ' nudge' : ''}" data-end ${s.game.winner !== null ? 'disabled' : ''}>Passer (fin du tour de J${s.game.active + 1})</button><button class="ghost" data-new>Nouvelle partie</button><span class="err" role="status">${esc(s.error ?? '')}</span>${idle && !s.error ? '<span class="sub">Plus rien à jouer ce tour : clique sur « Passer ».</span>' : ''}</div>
         ${hand(s)}
       </div>
       <div class="side">
